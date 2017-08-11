@@ -31,7 +31,7 @@ function gT($language, $variable) //gT = getTraduction
 if($msg == "/start")
 {
   $languageCode = $update['message']['from']['language_code'];
-  $response = gT($languageCode, $start);
+  $response = gT($languageCode, "start");
   sm($chatID, $response, $menu, "html");
 }
 
