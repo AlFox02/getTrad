@@ -38,7 +38,7 @@ if($msg == "/start")
 //Mentre per inserirlo...
 
 //Prendiamo conto che il messaggio sia "/inserisici es start Il comando start etc."
-if(strpos("/inserisci", $msg)===0)
+if(strpos($msg, "/inserisci")===0)
 {
   $e = explode(" ", $msg, 4);
   $languageCode = $e[1];
